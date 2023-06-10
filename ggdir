@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec svn export $(echo "$@" | sed -e 's/\(https:\/\/github\.com\/.*\)\/tree\/.*\/\(.*\)/\1\/trunk\/\2/g')
